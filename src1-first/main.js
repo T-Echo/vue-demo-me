@@ -2,8 +2,6 @@
 import Vue from 'vue'
 // 引入主组件
 import App from './App.vue'
-//引入样式(把样式文件放在哪)
-import './index.css'
 /* eslint-disable no-new */
 new Vue({
   // 外部元素选择器

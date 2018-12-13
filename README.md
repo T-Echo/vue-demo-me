@@ -1,21 +1,20 @@
-# gshop
+#定义组件
+#引入组件---注册组件
+#数据的来源：data、props、computed计算属性
+   如果某个属性值是根据已有数据生成的，就用计算属性
 
-> A Vue.js project
-
-## Build Setup
-
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+#根据功能划分组件
+#实现静态组件
+#实现动态组件：
+   ##初始化数据：数据定义在哪，数据类型，
+   ##更新数据：
+     Header：添加todo
+     Item：鼠标移入移出改变颜色、删除按钮显示/隐藏、点击删除按钮删除指定todo对象
+     Footer：全部数量变化、
+            已完成数量变化、
+            全选/全不选(计算属性)、
+            清空选中的数据、
+            对所有todo进行全选/不全选(是通过改变todo中complete的值来改变的是否选中)、
+            清除所有已完成的todo
+     将todos数据存储到localStorage中：用户刷新或重新打开网址还保持上一次关闭前的状态，利用深度监视:
+            保存哪个数据、什么时候存(数据一发生改变就存)、什么时候读取(一打开页面初始化页面时读取)
